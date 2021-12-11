@@ -64,3 +64,21 @@ tags:
 - 测试标签
 ```
 
+**拉取仓库hexo new报错**
+
+执行推荐命令如下
+
+```
+rm -rf node_modules && npm install --force
+```
+
+**hexo 报错**
+
+```
+Error: Cannot find module
+```
+
+```
+npm install hexo --no-optional
+```
+
