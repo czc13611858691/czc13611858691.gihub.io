@@ -44,3 +44,10 @@ hexo s
 localhost:4000
 ```
 
+**发布文章**
+
+```
+hexo new "文章名"
+hexo g -d
+```
+
