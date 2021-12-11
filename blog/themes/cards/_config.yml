@@ -295,7 +295,7 @@ comments:
     firebase_project_id:
     firebase_storage_bucket:
     firebase_messaging_sender_id:
-    theme: light # light | dark
+    theme: dark # light | dark
     locale: en
     
   # Twikoo
@@ -404,7 +404,7 @@ fancybox:
 back_to_top: false
 
 # 深色模式
-darkmode: false
+darkmode: true
 
 # Mermaid Diagrams
 mermaid: 
