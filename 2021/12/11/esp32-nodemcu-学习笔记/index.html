@@ -28,6 +28,8 @@
 <title>esp32_nodemcu_学习笔记 | Hexo</title>
 
 
+    <meta name="keywords" content="物联网, esp32, nodemcu">
+
 
 
 
@@ -120,6 +122,8 @@
     <div class="post-title__meta">
         <a href="/czc13611858691.gihub.io/archives/2021/12/" class="post-meta__date button">2021-12-11</a>
         
+    <span class="separate-dot"></span><a href="/czc13611858691.gihub.io/categories/%E8%BD%AF%E7%A1%AC%E7%BB%93%E5%90%88%E2%80%94%E2%80%94%E4%BB%8E%E9%9B%B6%E6%89%93%E9%80%A0%E7%89%A9%E8%81%94%E7%BD%91-%E5%AD%A6%E4%B9%A0/" class="button">软硬结合——从零打造物联网-学习</a>
+
  
         
     
@@ -135,7 +139,7 @@
 
     <aside class="post-side">
         <div class="post-side__toc">
-            
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%A6%E4%B9%A0%E7%9B%AE%E6%A0%87"><span class="toc-text">学习目标</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%BA%90-amp-%E6%9D%90%E6%96%99"><span class="toc-text">学习资源&amp;材料</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C%E6%AD%A5%E9%AA%A4-amp-%E5%AE%9E%E9%AA%8C%E7%8E%B0%E8%B1%A1"><span class="toc-text">操作步骤&amp;实验现象</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE"><span class="toc-text">服务器配置</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BF%9C%E7%A8%8B%E7%99%BB%E9%99%86"><span class="toc-text">远程登陆</span></a></li></ol></li></ol></li></ol>
         </div>
     </aside>
     <a class="btn-toc button" id="btn-toc" tabindex="0">
@@ -145,18 +149,66 @@
     </a>
     <div class="toc-menus" id="toc-menus">
         <div class="toc-title">Article Directory</div>
-        
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%A6%E4%B9%A0%E7%9B%AE%E6%A0%87"><span class="toc-text">学习目标</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%BA%90-amp-%E6%9D%90%E6%96%99"><span class="toc-text">学习资源&amp;材料</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C%E6%AD%A5%E9%AA%A4-amp-%E5%AE%9E%E9%AA%8C%E7%8E%B0%E8%B1%A1"><span class="toc-text">操作步骤&amp;实验现象</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE"><span class="toc-text">服务器配置</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BF%9C%E7%A8%8B%E7%99%BB%E9%99%86"><span class="toc-text">远程登陆</span></a></li></ol></li></ol></li></ol>
     </div>
 
 
 <article class="post post__with-toc content-card">
     <div class="post__header"></div>
     <div class="post__content">
-        
+        <h2 id="学习目标"><a href="#学习目标" class="headerlink" title="学习目标"></a>学习目标</h2><p>通过网页或者手机app点个灯</p>
+<p>这篇笔记的记录方式采用时间顺序的记录方式。</p>
+<h2 id="学习资源-amp-材料"><a href="#学习资源-amp-材料" class="headerlink" title="学习资源&amp;材料"></a>学习资源&amp;材料</h2><ul>
+<li><p>  硬件:esp32开发板</p>
+</li>
+<li><p>  服务器</p>
+</li>
+<li><p>  生子当如哈士奇的个人博客</p>
+</li>
+</ul>
+<h2 id="操作步骤-amp-实验现象"><a href="#操作步骤-amp-实验现象" class="headerlink" title="操作步骤&amp;实验现象"></a><strong>操作步骤&amp;实验现象</strong></h2><h3 id="服务器配置"><a href="#服务器配置" class="headerlink" title="服务器配置"></a>服务器配置</h3><p>购买服务器，安装<em>CentOS 8.0</em>系统</p>
+<p>设置密码(输入时密码不可见)</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo passwd root</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="远程登陆"><a href="#远程登陆" class="headerlink" title="远程登陆"></a>远程登陆</h4><p>下载<a target="_blank" rel="noopener" href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">PuTTY</a></p>
+<ol>
+<li> 打开软件</li>
+<li> 设置公网ip地址(Host Name)</li>
+<li> 设置Port端口</li>
+<li> 设置连接方式SSH</li>
+<li> save</li>
+<li> open</li>
+<li> login as: root</li>
+<li> 输入密码</li>
+</ol>
+<p><strong>报错</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo vi /etc/ssh/sshd_config</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>修改内容如下</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">PermitRootLogin yes</span><br><span class="line">PasswordAuthentication yes</span><br></pre></td></tr></table></figure>
+
+<p>重启ssh服务</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service sshd restart</span><br></pre></td></tr></table></figure>
+
+<p><strong>密钥登陆</strong></p>
+<p><a target="_blank" rel="noopener" href="https://www.laozuo.org/2811.html">Putty使用密钥自动登陆SSH</a></p>
+<p>使用云服务器生成公钥，下载</p>
+<p>使用puttygen打开，生成私钥，可以不设置密码</p>
+<p>设置auto-login username root</p>
+<p>save</p>
+<p>下次直接点击就可以登陆</p>
+<p><strong>注意</strong></p>
+<p>1.putty自动断开</p>
+<p><img src="https://cdn.jsdelivr.net/gh/czc13611858691/picgoRepo@master/20211211221520.png"></p>
+<p>2.使用腾讯云绑定密钥时会关机，然后里面的设置都清空了</p>
+<p>可以备份一下镜像下次恢复</p>
+
     </div>
      
     <div class="post-footer__meta"><p>updated at 2021-12-11</p></div> 
-    <div class="post-entry__tags"></div> 
+    <div class="post-entry__tags"><a href="/czc13611858691.gihub.io/tags/%E7%89%A9%E8%81%94%E7%BD%91/" class="post-tags__link button"># 物联网</a><a href="/czc13611858691.gihub.io/tags/esp32/" class="post-tags__link button"># esp32</a><a href="/czc13611858691.gihub.io/tags/nodemcu/" class="post-tags__link button"># nodemcu</a></div> 
 </article>
 
 
