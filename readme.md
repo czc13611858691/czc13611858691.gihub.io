@@ -82,3 +82,11 @@ Error: Cannot find module
 npm install hexo --no-optional
 ```
 
+**自动提交命令**
+
+打开blog目录cmd
+
+```
+hexo_g_d.bat
+```
+
