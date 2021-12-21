@@ -87,6 +87,6 @@ npm install hexo --no-optional
 打开blog目录cmd
 
 ```
-hexo_g_d.bat
+./hexo_g_d.bat
 ```
 
