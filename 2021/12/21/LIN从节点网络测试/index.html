@@ -25,10 +25,10 @@
     <!-- meta -->
 
 
-<title>git只添加指定类型的文件的.gitignore规则 | Hexo</title>
+<title>LIN网络测试 | Hexo</title>
 
 
-    <meta name="keywords" content="git">
+    <meta name="keywords" content="LIN, 汽车电子">
 
 
 
@@ -117,12 +117,12 @@
 
 <div class="post-title">
     <h1 class="post-title__text">
-        git只添加指定类型的文件的.gitignore规则
+        LIN网络测试
     </h1>
     <div class="post-title__meta">
         <a href="/czc13611858691.gihub.io/archives/2021/12/" class="post-meta__date button">2021-12-21</a>
         
-    <span class="separate-dot"></span><a href="/czc13611858691.gihub.io/categories/miscellaneous/" class="button">miscellaneous</a>
+    <span class="separate-dot"></span><a href="/czc13611858691.gihub.io/categories/%E5%B7%A5%E4%BD%9C%E7%AC%94%E8%AE%B0/" class="button">工作笔记</a>
 
  
         
@@ -139,7 +139,7 @@
 
     <aside class="post-side">
         <div class="post-side__toc">
-            
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%89%A9%E7%90%86%E5%B1%82"><span class="toc-text">物理层</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B7%A5%E4%BD%9C%E7%94%B5%E5%8E%8B%E8%8C%83%E5%9B%B4%E6%B5%8B%E8%AF%95"><span class="toc-text">工作电压范围测试</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%A1%E5%8F%B7%E7%94%B5%E5%8E%8B%E9%98%80%E5%80%BC"><span class="toc-text">信号电压阀值</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E5%B1%82"><span class="toc-text">网络层</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%94%99%E8%AF%AF%E9%80%9A%E8%AE%AF"><span class="toc-text">错误通讯</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9D%A1%E7%9C%A0%E5%94%A4%E9%86%92"><span class="toc-text">睡眠唤醒</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B6%E4%BB%96"><span class="toc-text">其他</span></a></li></ol>
         </div>
     </aside>
     <a class="btn-toc button" id="btn-toc" tabindex="0">
@@ -149,50 +149,35 @@
     </a>
     <div class="toc-menus" id="toc-menus">
         <div class="toc-title">Article Directory</div>
-        
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%89%A9%E7%90%86%E5%B1%82"><span class="toc-text">物理层</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B7%A5%E4%BD%9C%E7%94%B5%E5%8E%8B%E8%8C%83%E5%9B%B4%E6%B5%8B%E8%AF%95"><span class="toc-text">工作电压范围测试</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%A1%E5%8F%B7%E7%94%B5%E5%8E%8B%E9%98%80%E5%80%BC"><span class="toc-text">信号电压阀值</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E5%B1%82"><span class="toc-text">网络层</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%94%99%E8%AF%AF%E9%80%9A%E8%AE%AF"><span class="toc-text">错误通讯</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9D%A1%E7%9C%A0%E5%94%A4%E9%86%92"><span class="toc-text">睡眠唤醒</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B6%E4%BB%96"><span class="toc-text">其他</span></a></li></ol>
     </div>
 
 
 <article class="post post__with-toc content-card">
     <div class="post__header"></div>
     <div class="post__content">
-        <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">#忽略根目录下的所有文件</span><br><span class="line">*</span><br><span class="line">#忽略子目录下的所有文件</span><br><span class="line">/*</span><br><span class="line">#包含目录</span><br><span class="line">!*/</span><br><span class="line"></span><br><span class="line">#指定不忽略的文件</span><br><span class="line">!*.c</span><br><span class="line">!*.h</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
+        <h2 id="物理层"><a href="#物理层" class="headerlink" title="物理层"></a>物理层</h2><h3 id="工作电压范围测试"><a href="#工作电压范围测试" class="headerlink" title="工作电压范围测试"></a>工作电压范围测试</h3><p>​    设置CANoe为主节点，分别设置电压为最高，最低，正常电压，测试从节点是否能正常响应数据</p>
+<h3 id="信号电压阀值"><a href="#信号电压阀值" class="headerlink" title="信号电压阀值"></a>信号电压阀值</h3><h2 id="网络层"><a href="#网络层" class="headerlink" title="网络层"></a>网络层</h2><h2 id="错误通讯"><a href="#错误通讯" class="headerlink" title="错误通讯"></a>错误通讯</h2><h2 id="睡眠唤醒"><a href="#睡眠唤醒" class="headerlink" title="睡眠唤醒"></a>睡眠唤醒</h2><h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2>
     </div>
      
     <div class="post-footer__meta"><p>updated at 2021-12-21</p></div> 
-    <div class="post-entry__tags"><a href="/czc13611858691.gihub.io/tags/git/" class="post-tags__link button"># git</a></div> 
+    <div class="post-entry__tags"><a href="/czc13611858691.gihub.io/tags/LIN/" class="post-tags__link button"># LIN</a><a href="/czc13611858691.gihub.io/tags/%E6%B1%BD%E8%BD%A6%E7%94%B5%E5%AD%90/" class="post-tags__link button"># 汽车电子</a></div> 
 </article>
 
 
     <div class="nav">
         <div class="nav__prev">
             
-                <a href="/czc13611858691.gihub.io/2021/12/21/LIN%E4%BB%8E%E8%8A%82%E7%82%B9%E7%BD%91%E7%BB%9C%E6%B5%8B%E8%AF%95/" class="nav__link">
-                    <div>
-                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M589.088 790.624L310.464 512l278.624-278.624 45.248 45.248L400.96 512l233.376 233.376z" fill="#808080"></path></svg>
-                    </div>
-                    <div>
-                        <div class="nav__label">
-                            Previous Post
-                        </div>
-                        <div class="nav__title">
-                            LIN网络测试
-                        </div>
-                    </div>
-                </a>
-            
         </div>
         <div class="nav__next">
             
-                <a href="/czc13611858691.gihub.io/2021/12/11/esp32-nodemcu-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="nav__link">
+                <a href="/czc13611858691.gihub.io/2021/12/21/git%E5%8F%AA%E6%B7%BB%E5%8A%A0%E6%8C%87%E5%AE%9A%E7%B1%BB%E5%9E%8B%E7%9A%84%E6%96%87%E4%BB%B6%E7%9A%84-gitignore%E8%A7%84%E5%88%99/" class="nav__link">
                     <div>
                         <div class="nav__label">
                             Next Post
                         </div>
                         <div class="nav__title">
-                            esp32_nodemcu_学习笔记
+                            git只添加指定类型的文件的.gitignore规则
                         </div>
                     </div>
                     <div>
