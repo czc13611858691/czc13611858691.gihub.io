@@ -24,8 +24,9 @@ ipconfg
 
 -   windows允许局域网连接
 
-![](https://cdn.jsdelivr.net/gh/czc13611858691/picgoRepo@master/20211211221520.png)
+![](https://cdn.jsdelivr.net/gh/czc13611858691/picgoRepo@master/20211225231126.png)
+
+------------
 
 -   vmware虚拟机设置-->网络适配器-->设置桥接模式，复制物理网络连接
-
 -   使用浏览器打开google测试是否成功
