@@ -18,7 +18,10 @@ categories:
 ipconfg
 ```
 
--   观察IPv4地址
+-   观察IPv4地址，同时在虚拟机设置中-->网络-->代理-->手动-->socks5设置ipv4地址，同时设置端口
+
+![](https://cdn.jsdelivr.net/gh/czc13611858691/picgoRepo@master/20211225230040.png)
+
 -   windows允许局域网连接
 
 ![](https://cdn.jsdelivr.net/gh/czc13611858691/picgoRepo@master/20211211221520.png)
