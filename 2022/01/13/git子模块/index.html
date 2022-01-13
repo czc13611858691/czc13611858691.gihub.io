@@ -25,10 +25,10 @@
     <!-- meta -->
 
 
-<title>cmake构建单片机工程 | Hexo</title>
+<title>git子模块 | Hexo</title>
 
 
-    <meta name="keywords" content="cmake">
+    <meta name="keywords" content="git">
 
 
 
@@ -117,12 +117,12 @@
 
 <div class="post-title">
     <h1 class="post-title__text">
-        cmake构建单片机工程
+        git子模块
     </h1>
     <div class="post-title__meta">
-        <a href="/czc13611858691.gihub.io/archives/2021/12/" class="post-meta__date button">2021-12-22</a>
+        <a href="/czc13611858691.gihub.io/archives/2022/01/" class="post-meta__date button">2022-01-13</a>
         
-    <span class="separate-dot"></span><a href="/czc13611858691.gihub.io/categories/miscellaneous/" class="button">miscellaneous</a>
+    <span class="separate-dot"></span><a href="/czc13611858691.gihub.io/categories/%E5%B7%A5%E4%BD%9C%E7%AC%94%E8%AE%B0/" class="button">工作笔记</a>
 
  
         
@@ -139,7 +139,7 @@
 
     <aside class="post-side">
         <div class="post-side__toc">
-            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-CMake%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85"><span class="toc-text">1.CMake下载安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E5%8F%82%E8%80%83%E6%96%87%E7%AB%A0"><span class="toc-text">2.参考文章</span></a></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%8B%89%E5%8F%96%E5%88%AB%E4%BA%BA%E7%9A%84%E4%BB%93%E5%BA%93"><span class="toc-text">1.拉取别人的仓库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%85%8B%E9%9A%86%E5%90%AB%E6%9C%89%E5%AD%90%E6%A8%A1%E5%9D%97%E7%9A%84%E9%A1%B9%E7%9B%AE"><span class="toc-text">2.克隆含有子模块的项目</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E7%A7%BB%E5%8A%A8%E5%AD%90%E6%A8%A1%E5%9D%97%E7%9A%84%E4%BD%8D%E7%BD%AE"><span class="toc-text">3.移动子模块的位置</span></a></li></ol>
         </div>
     </aside>
     <a class="btn-toc button" id="btn-toc" tabindex="0">
@@ -149,67 +149,43 @@
     </a>
     <div class="toc-menus" id="toc-menus">
         <div class="toc-title">文章目錄</div>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-CMake%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85"><span class="toc-text">1.CMake下载安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E5%8F%82%E8%80%83%E6%96%87%E7%AB%A0"><span class="toc-text">2.参考文章</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%8B%89%E5%8F%96%E5%88%AB%E4%BA%BA%E7%9A%84%E4%BB%93%E5%BA%93"><span class="toc-text">1.拉取别人的仓库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%85%8B%E9%9A%86%E5%90%AB%E6%9C%89%E5%AD%90%E6%A8%A1%E5%9D%97%E7%9A%84%E9%A1%B9%E7%9B%AE"><span class="toc-text">2.克隆含有子模块的项目</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E7%A7%BB%E5%8A%A8%E5%AD%90%E6%A8%A1%E5%9D%97%E7%9A%84%E4%BD%8D%E7%BD%AE"><span class="toc-text">3.移动子模块的位置</span></a></li></ol>
     </div>
 
 
 <article class="post post__with-toc content-card">
     <div class="post__header"></div>
     <div class="post__content">
-        <h2 id="1-CMake下载安装"><a href="#1-CMake下载安装" class="headerlink" title="1.CMake下载安装"></a>1.CMake下载安装</h2><ul>
-<li><a target="_blank" rel="noopener" href="https://cmake.org/">官网cmake</a></li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cmake --version</span><br></pre></td></tr></table></figure>
+        <h3 id="1-拉取别人的仓库"><a href="#1-拉取别人的仓库" class="headerlink" title="1.拉取别人的仓库"></a>1.拉取别人的仓库</h3><p><strong>示例</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git submodule add https://github.com/chaconinc/DbConnector</span><br></pre></td></tr></table></figure>
 
-<ul>
-<li><a target="_blank" rel="noopener" href="https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads">gcc-arm-none-eabi工具链</a></li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ arm-none-eabi-gcc --version</span><br></pre></td></tr></table></figure>
+<h3 id="2-克隆含有子模块的项目"><a href="#2-克隆含有子模块的项目" class="headerlink" title="2.克隆含有子模块的项目"></a>2.克隆含有子模块的项目</h3><p><strong>示例</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git submodule init</span><br><span class="line">$ git submodule update</span><br></pre></td></tr></table></figure>
 
-<ul>
-<li><a target="_blank" rel="noopener" href="https://jmeubank.github.io/tdm-gcc/">tdm-gcc编译器</a></li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mingw32-make.exe --version</span><br></pre></td></tr></table></figure>
+<h3 id="3-移动子模块的位置"><a href="#3-移动子模块的位置" class="headerlink" title="3.移动子模块的位置"></a>3.移动子模块的位置</h3><p><strong>示例</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git mv old/submod new/submod</span><br></pre></td></tr></table></figure>
 
-<p>还需要<strong>stm32cubemx</strong></p>
-<h2 id="2-参考文章"><a href="#2-参考文章" class="headerlink" title="2.参考文章"></a>2.参考文章</h2><p>文章：<a target="_blank" rel="noopener" href="https://dev.to/younup/cmake-on-stm32-the-beginning-3766">STM32 上的 CMake</a></p>
-<p><strong>stm32cubemx</strong>生成的文件目录不同版本有点不同，我使用的是6.2.1</p>
-<p><a target="_blank" rel="noopener" href="https://github.com/czc13611858691/stm32_cmake_example">我的github工程例子</a></p>
 
     </div>
      
-    <div class="post-footer__meta"><p>更新於 2021-12-22</p></div> 
-    <div class="post-entry__tags"><a href="/czc13611858691.gihub.io/tags/cmake/" class="post-tags__link button"># cmake</a></div> 
+    <div class="post-footer__meta"><p>更新於 2022-01-13</p></div> 
+    <div class="post-entry__tags"><a href="/czc13611858691.gihub.io/tags/git/" class="post-tags__link button"># git</a></div> 
 </article>
 
 
     <div class="nav">
         <div class="nav__prev">
             
-                <a href="/czc13611858691.gihub.io/2021/12/25/ubuntu%E8%99%9A%E6%8B%9F%E6%9C%BA-v2ray%E8%AE%BE%E7%BD%AE%E4%BB%A3%E7%90%86/" class="nav__link">
-                    <div>
-                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M589.088 790.624L310.464 512l278.624-278.624 45.248 45.248L400.96 512l233.376 233.376z" fill="#808080"></path></svg>
-                    </div>
-                    <div>
-                        <div class="nav__label">
-                            Previous Post
-                        </div>
-                        <div class="nav__title">
-                            ubuntu虚拟机+v2ray设置代理
-                        </div>
-                    </div>
-                </a>
-            
         </div>
         <div class="nav__next">
             
-                <a href="/czc13611858691.gihub.io/2021/12/21/fpv%E7%A9%BF%E8%B6%8A%E6%9C%BA/" class="nav__link">
+                <a href="/czc13611858691.gihub.io/2022/01/12/microchip-studio-gitignore%E6%A8%A1%E6%9D%BF/" class="nav__link">
                     <div>
                         <div class="nav__label">
                             Next Post
                         </div>
                         <div class="nav__title">
-                            fpv穿越机
+                            microchip studio gitignore模板
                         </div>
                     </div>
                     <div>
