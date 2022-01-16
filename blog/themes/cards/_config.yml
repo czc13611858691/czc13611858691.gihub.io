@@ -60,8 +60,8 @@ navbar:
     #   url: /friends/
     - name: 分类
       url: /categories/
-    - name: Page
-      url: /page/
+    # - name: Page
+    #   url: /page/
 
   # 导航栏永远显示在屏幕顶端
   # 仅当屏幕宽度不小于 1080 px 时生效
