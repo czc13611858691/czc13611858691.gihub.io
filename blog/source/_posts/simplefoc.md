@@ -2,7 +2,9 @@
 title: simplefoc
 date: 2022-10-22 08:58:55
 tags:
+- simplefoc
 categories:
+- 电机
 ---
 
 
