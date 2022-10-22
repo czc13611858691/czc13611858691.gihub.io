@@ -135,7 +135,7 @@
 
     <aside class="post-side">
         <div class="post-side__toc">
-            
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%80%E7%8E%AF%E4%BD%8D%E7%BD%AE%E6%8E%A7%E5%88%B6"><span class="toc-text">开环位置控制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%80%E7%8E%AF%E9%80%9F%E5%BA%A6%E6%8E%A7%E5%88%B6"><span class="toc-text">开环速度控制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A8%A1%E6%8B%9F%E9%87%8F%E6%B5%8B%E9%87%8F%E9%80%9F%E5%BA%A6%E5%92%8C%E4%BD%8D%E7%BD%AE"><span class="toc-text">模拟量测量速度和位置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#I2C%E4%BC%A0%E8%BE%93%E9%80%9F%E5%BA%A6%E5%92%8C%E4%BD%8D%E7%BD%AE%E4%BF%A1%E6%81%AF"><span class="toc-text">I2C传输速度和位置信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%97%AD%E7%8E%AF%E4%BD%8D%E7%BD%AE%E6%8E%A7%E5%88%B6"><span class="toc-text">闭环位置控制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%97%AD%E7%8E%AF%E9%80%9F%E5%BA%A6%E6%8E%A7%E5%88%B6"><span class="toc-text">闭环速度控制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%B5%E6%B5%81%E4%BC%A0%E6%84%9F%E5%99%A8%E6%B5%8B%E8%AF%95"><span class="toc-text">电流传感器测试</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A8%B3%E5%8E%8B%E5%99%A8L78M08"><span class="toc-text">稳压器L78M08</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%B5%E6%B5%81%E6%94%BE%E5%A4%A7%E5%99%A8"><span class="toc-text">电流放大器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E7%9B%B8%E7%94%B5%E6%9C%BA%E9%A9%B1%E5%8A%A8"><span class="toc-text">三相电机驱动</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#c-%E8%99%9A%E5%87%BD%E6%95%B0"><span class="toc-text">c++虚函数</span></a></li></ol>
         </div>
     </aside>
     <a class="btn-toc button" id="btn-toc" tabindex="0">
@@ -145,14 +145,131 @@
     </a>
     <div class="toc-menus" id="toc-menus">
         <div class="toc-title">Article Directory</div>
-        
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%80%E7%8E%AF%E4%BD%8D%E7%BD%AE%E6%8E%A7%E5%88%B6"><span class="toc-text">开环位置控制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%80%E7%8E%AF%E9%80%9F%E5%BA%A6%E6%8E%A7%E5%88%B6"><span class="toc-text">开环速度控制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A8%A1%E6%8B%9F%E9%87%8F%E6%B5%8B%E9%87%8F%E9%80%9F%E5%BA%A6%E5%92%8C%E4%BD%8D%E7%BD%AE"><span class="toc-text">模拟量测量速度和位置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#I2C%E4%BC%A0%E8%BE%93%E9%80%9F%E5%BA%A6%E5%92%8C%E4%BD%8D%E7%BD%AE%E4%BF%A1%E6%81%AF"><span class="toc-text">I2C传输速度和位置信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%97%AD%E7%8E%AF%E4%BD%8D%E7%BD%AE%E6%8E%A7%E5%88%B6"><span class="toc-text">闭环位置控制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%97%AD%E7%8E%AF%E9%80%9F%E5%BA%A6%E6%8E%A7%E5%88%B6"><span class="toc-text">闭环速度控制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%B5%E6%B5%81%E4%BC%A0%E6%84%9F%E5%99%A8%E6%B5%8B%E8%AF%95"><span class="toc-text">电流传感器测试</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A8%B3%E5%8E%8B%E5%99%A8L78M08"><span class="toc-text">稳压器L78M08</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%B5%E6%B5%81%E6%94%BE%E5%A4%A7%E5%99%A8"><span class="toc-text">电流放大器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E7%9B%B8%E7%94%B5%E6%9C%BA%E9%A9%B1%E5%8A%A8"><span class="toc-text">三相电机驱动</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#c-%E8%99%9A%E5%87%BD%E6%95%B0"><span class="toc-text">c++虚函数</span></a></li></ol>
     </div>
 
 
 <article class="post post__with-toc content-card">
     <div class="post__header"></div>
     <div class="post__content">
-        
+        <h1 id="项目资料收集"><a href="#项目资料收集" class="headerlink" title="项目资料收集"></a>项目资料收集</h1><table>
+<thead>
+<tr>
+<th>simplef foc软件库</th>
+<th>Arduino-FOC</th>
+<th><a target="_blank" rel="noopener" href="https://github.com/simplefoc/Arduino-FOC">https://github.com/simplefoc/Arduino-FOC</a></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>PCB工程</td>
+<td>Arduino-SimpleFOCShield</td>
+<td><a target="_blank" rel="noopener" href="https://github.com/simplefoc/Arduino-SimpleFOCShield">https://github.com/simplefoc/Arduino-SimpleFOCShield</a></td>
+</tr>
+</tbody></table>
+<p>硬件数据手册</p>
+<table>
+<thead>
+<tr>
+<th>INA240</th>
+<th>电流检测放大器</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>L78M08</td>
+<td>稳压器</td>
+</tr>
+<tr>
+<td>L6234PD013TR</td>
+<td>三相电机驱动器</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>驱动板淘宝购买链接</th>
+<th><a target="_blank" rel="noopener" href="https://item.taobao.com/item.htm?spm=a1z09.2.0.0.255e2e8dcrGLst&amp;id=642985271177&amp;_u=h2p6t0m7c0b1">https://item.taobao.com/item.htm?spm=a1z09.2.0.0.255e2e8dcrGLst&amp;id=642985271177&amp;_u=h2p6t0m7c0b1</a></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>CSDN教程</td>
+<td><a target="_blank" rel="noopener" href="https://blog.csdn.net/gjy_skyblue/category_10936827.html?spm=1001.2014.3001.5482">https://blog.csdn.net/gjy_skyblue/category_10936827.html?spm=1001.2014.3001.5482</a></td>
+</tr>
+<tr>
+<td>github仓库地址</td>
+<td><a target="_blank" rel="noopener" href="https://github.com/makerbase-mks/simplefoc-MKS">https://github.com/makerbase-mks/simplefoc-MKS</a></td>
+</tr>
+</tbody></table>
+<h1 id="驱动板到手测试"><a href="#驱动板到手测试" class="headerlink" title="驱动板到手测试"></a>驱动板到手测试</h1><p>直流电源24V</p>
+<p>硬件配置如下:</p>
+<ol>
+<li> simple foc驱动板</li>
+<li> 电机一个</li>
+</ol>
+<h2 id="开环位置控制"><a href="#开环位置控制" class="headerlink" title="开环位置控制"></a>开环位置控制</h2><p>运行第一个示例open_loop_position_example</p>
+<p>修改参数如下</p>
+<p>BLDCMotor motor = BLDCMotor(7);</p>
+<p>driver.voltage_power_supply = 24;</p>
+<p>motor.voltage_limit = 1;</p>
+<p>选择串口</p>
+<p>输入T6.28,或者其他位置参数，观察到电机运行在不同的位置</p>
+<h2 id="开环速度控制"><a href="#开环速度控制" class="headerlink" title="开环速度控制"></a>开环速度控制</h2><p>运行第二个示例open_loop_velocity_example</p>
+<p>修改参数如上个示例</p>
+<p>串口输入信息T5,或者其他速度参数，观察电机以一定速度运行</p>
+<h2 id="模拟量测量速度和位置"><a href="#模拟量测量速度和位置" class="headerlink" title="模拟量测量速度和位置"></a>模拟量测量速度和位置</h2><p>AS5600传感器Analog接口测试</p>
+<img src="https://cdn.jsdelivr.net/gh/czc13611858691/picgoRepo@master/20221022084518.jpg" alt="在这里插入图片描述" style="zoom:25%;" />
+
+<p>红色5V/黑色GND/黄色A1</p>
+<p>文件 -&gt; 示例-&gt; Simple FOC -&gt; utils -&gt; sensor_test -&gt; magnetic_sensors -&gt; magnetic_sensor_analog_example</p>
+<p>串口打印速度和位置信息，用手转动电机可以观察到信息变化</p>
+<h2 id="I2C传输速度和位置信息"><a href="#I2C传输速度和位置信息" class="headerlink" title="I2C传输速度和位置信息"></a>I2C传输速度和位置信息</h2><p>I2C接线如下图</p>
+<img src="https://cdn.jsdelivr.net/gh/czc13611858691/picgoRepo@master/20221022084737.jpg">
+
+<p>红色5V/黑色GND/黄色SDA/红色SCL</p>
+<p>运行示例 工程文件-&gt;示例-&gt; Simple FOC -&gt; utils -&gt; sensor_test -&gt; magnetic_sensors -&gt; magnetic_sensor_i2c_example，测试效果类似上一个例程</p>
+<h2 id="闭环位置控制"><a href="#闭环位置控制" class="headerlink" title="闭环位置控制"></a>闭环位置控制</h2><p>运行闭环位置测试文件 -&gt; 示例 -&gt; Simple FOC -&gt; motion_control -&gt; position_motion_control -&gt; magnetic_sensor -&gt; angle_control</p>
+<p>根据选择的模拟量接口或者I2C接口，取消注释</p>
+<p>修改参数</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">BLDCMotor motor = BLDCMotor(7);</span><br><span class="line">driver.voltage_power_supply = 24;</span><br><span class="line">motor.PID_velocity.I = 2;</span><br><span class="line">motor.voltage_limit = 1;</span><br></pre></td></tr></table></figure>
+
+<p>上传代码，串口输出调试信息</p>
+<p>输入T6.28，观察电机转一圈 2pi</p>
+<p>松手后电机会回到原位置，这就是闭环电机</p>
+<p>注意有以下问题:</p>
+<ul>
+<li>  电机异常抖动</li>
+</ul>
+<h2 id="闭环速度控制"><a href="#闭环速度控制" class="headerlink" title="闭环速度控制"></a>闭环速度控制</h2><p>闭环速度测试</p>
+<p>文件 -&gt; 示例 -&gt; Simple FOC -&gt; motion_control -&gt; velocity_motion_control -&gt; magnetic_sensor -&gt; velocity_control</p>
+<p>修改参数同上个例程</p>
+<p>输入T2,固定速度转动</p>
+<h2 id="电流传感器测试"><a href="#电流传感器测试" class="headerlink" title="电流传感器测试"></a>电流传感器测试</h2><p>电流传感器测试</p>
+<p>angle_control_current_sense_test.ino</p>
+<p>上传代码后可以通过串口观察4个参数返回，分别为</p>
+<ol>
+<li> A相电流</li>
+<li> B相电流</li>
+<li> 未知</li>
+<li> 幅值</li>
+</ol>
+<h1 id="硬件部分学习"><a href="#硬件部分学习" class="headerlink" title="硬件部分学习"></a>硬件部分学习</h1><h2 id="稳压器L78M08"><a href="#稳压器L78M08" class="headerlink" title="稳压器L78M08"></a>稳压器L78M08</h2><img src="https://cdn.jsdelivr.net/gh/czc13611858691/picgoRepo@master/20221022085011.png"/>
+
+<p><img src="https://cdn.jsdelivr.net/gh/czc13611858691/picgoRepo@master/20221022085018.png"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/czc13611858691/picgoRepo@master/20221022085025.png"></p>
+<ul>
+<li>  输入电压10.5V-23V</li>
+<li>  输出电压8V</li>
+</ul>
+<h2 id="电流放大器"><a href="#电流放大器" class="headerlink" title="电流放大器"></a>电流放大器</h2><h2 id="三相电机驱动"><a href="#三相电机驱动" class="headerlink" title="三相电机驱动"></a>三相电机驱动</h2><h1 id="软件部分学习"><a href="#软件部分学习" class="headerlink" title="软件部分学习"></a>软件部分学习</h1><h2 id="c-虚函数"><a href="#c-虚函数" class="headerlink" title="c++虚函数"></a>c++虚函数</h2><p>BLDCDriver3PWM.h文件中出现了虚函数</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">virtual void setPhaseState(int sa, int sb, int sc) override;</span><br></pre></td></tr></table></figure>
+
+<p>虚函数的概念:</p>
+<p>虚函数是指一个类中你希望重载的成员函数 ，当你用一个  基类指针或引用  指向一个继承类对象的时候，调用一个虚函数时, 实际调用的是继承类的版本。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">class BLDCDriver&#123;</span><br><span class="line">	...</span><br><span class="line">	virtual void setPhaseState(int sa, int sb, int sc) = 0;</span><br><span class="line">	...</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">class BLDCDriver3PWM: public BLDCDriver&#123;</span><br><span class="line">	...</span><br><span class="line">	virtual void setPhaseState(int sa, int sb, int sc) override;</span><br><span class="line">	...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>由上图示例可以发现BLDCDriver3PWM继承自BLDCDriver,setPhaseState函数在两个类中都进行了定义，实际调用这个函数的时候，调用的是BLDCDriver3PWM中的。</p>
+
     </div>
      
     <div class="post-footer__meta"><p>updated at 2022-10-22</p></div> 
