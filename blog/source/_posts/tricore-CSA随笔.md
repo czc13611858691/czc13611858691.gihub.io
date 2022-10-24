@@ -1,5 +1,5 @@
 ---
-title: tricore CSA随笔1
+title: tricore CSA随笔
 date: 2022-10-24 21:27:11
 tags:
 - tricore
@@ -10,7 +10,7 @@ categories:
 
 ### 简介
 
-这是一篇记录学习Tricore CSA的笔记，有没有后续不确定
+这是一篇记录学习Tricore CSA的笔记
 
 ### AP32386_AURIX_Context_Handling_v10.pdf文档的一些内容摘录
 
