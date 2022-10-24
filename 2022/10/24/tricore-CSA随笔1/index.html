@@ -196,7 +196,7 @@
 <p><img src="https://cdn.jsdelivr.net/gh/czc13611858691/picgoRepo@master/20221024213926.png" alt="image-20221024135528535"></p>
 <p>初始化csa调用函数的示例代码</p>
 <p>将初始化函数直接封装成函数</p>
-<p><img src="img/image-20221024135615936.png" alt="image-20221024135615936"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/czc13611858691/picgoRepo@master/20221024214656.png" alt="image-20221024135615936"></p>
 <p>在初始化csa之前不能调用函数，但是有inline标志的函数是没有问题的。</p>
 <h4 id="初始化CSA区域后的内存"><a href="#初始化CSA区域后的内存" class="headerlink" title="初始化CSA区域后的内存"></a>初始化CSA区域后的内存</h4><p>UDE调试结果</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">0x7000fc00 0x7000fc00     0 g __CSA0                              dsram0 .CPU0.csa        .CPU0.csa                                   2_Out/TC264/MAIN/TC264.elf</span><br><span class="line">0x70011c00 0x70011c00     0 g __CSA0_END                          dsram0 .CPU0.csa        .CPU0.csa                                   2_Out/TC264/MAIN/TC264.elf</span><br></pre></td></tr></table></figure>
