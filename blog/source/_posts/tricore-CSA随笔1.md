@@ -109,7 +109,7 @@ __asm(" .align 5");
 
 将初始化函数直接封装成函数
 
-![image-20221024135615936](img/image-20221024135615936.png)
+![image-20221024135615936](https://cdn.jsdelivr.net/gh/czc13611858691/picgoRepo@master/20221024214656.png)
 
 在初始化csa之前不能调用函数，但是有inline标志的函数是没有问题的。
 
