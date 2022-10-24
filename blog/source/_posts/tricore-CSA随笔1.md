@@ -187,4 +187,4 @@ https://www.jianshu.com/p/90b698a1b28a
 
 通过修改PSW CDC的参数，可以关闭递归跟踪，直到CSA用尽才进入trap
 
-![image-20221024170613141](img/image-20221024170613141.png)
+![image-20221024170613141](https://cdn.jsdelivr.net/gh/czc13611858691/picgoRepo@master/20221024215202.png)
