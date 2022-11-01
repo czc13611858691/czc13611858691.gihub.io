@@ -25,8 +25,10 @@
     <!-- meta -->
 
 
-<title>文章标签 | Hexo</title>
+<title>freertos内核入门 | Hexo</title>
 
+
+    <meta name="keywords" content="freertos">
 
 
 
@@ -39,6 +41,13 @@
  
 
     
+    
+        <link rel="stylesheet" id="hl-default-theme" href="/czc13611858691.gihub.io/css/highlight/default.css" media="none" >
+        
+            <link rel="stylesheet" id="hl-dark-theme" href="/czc13611858691.gihub.io/css/highlight/dark.css" media="none">
+        
+    
+
     
     
 
@@ -103,41 +112,94 @@
 </header>
 
 
-    <div class="cover">
-        <div class="cover__logo">
-            
-                <h1>Czc&#39;s Blog</h1>
+            <main class="main">
+    
+
+<div class="post-title">
+    <h1 class="post-title__text">
+        freertos内核入门
+    </h1>
+    <div class="post-title__meta">
+        <a href="/czc13611858691.gihub.io/archives/2022/11/" class="post-meta__date button">2022-11-01</a>
+        
+    <span class="separate-dot"></span><a href="/czc13611858691.gihub.io/categories/os/" class="button">os</a>
+
+ 
+        
+    
+    
+
+
+ 
+
+ 
+    </div>
+</div>
+
+
+    <aside class="post-side">
+        <div class="post-side__toc">
             
         </div>
-        
-        
-            <div class="cover__intro">
-                <p>肝</p>
- 
-            </div>
+    </aside>
+    <a class="btn-toc button" id="btn-toc" tabindex="0">
+        <svg viewBox="0 0 1024 1024" width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+            <path d="M128 256h64V192H128zM320 256h576V192H320zM128 544h64v-64H128zM320 544h576v-64H320zM128 832h64v-64H128zM320 832h576v-64H320z" fill="currentColor"></path>
+        </svg>
+    </a>
+    <div class="toc-menus" id="toc-menus">
+        <div class="toc-title">Article Directory</div>
         
     </div>
 
+
+<article class="post post__with-toc content-card">
+    <div class="post__header"></div>
+    <div class="post__content">
+        <h1 id="1-简介"><a href="#1-简介" class="headerlink" title="1. 简介"></a>1. 简介</h1><p>后面的工作项目上在tricore系列单片机应该会上多核os系统，因此找个开源os学习一下os的一些基本概念。</p>
+<h1 id="2-入门"><a href="#2-入门" class="headerlink" title="2. 入门"></a>2. 入门</h1><p>最好的入门方法就是动手</p>
+<p>官方提供了一个文档，和示例工程，不依赖于硬件，在windows上使用VS跑os.</p>
+<p><img src="https://cdn.jsdelivr.net/gh/czc13611858691/picgoRepo@master/20221101221732.png"></p>
+<p>上图是官方的资料，包括文档和示例demo。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://www.freertos.org/Documentation/RTOS_book.html</span><br></pre></td></tr></table></figure>
+
+<p>后续有时间的话，会更新一些内核笔记。</p>
+
+    </div>
+     
+    <div class="post-footer__meta"><p>updated at 2022-11-01</p></div> 
+    <div class="post-entry__tags"><a href="/czc13611858691.gihub.io/tags/freertos/" class="post-tags__link button"># freertos</a></div> 
+</article>
+
+
+    <div class="nav">
+        <div class="nav__prev">
             
+        </div>
+        <div class="nav__next">
+            
+                <a href="/czc13611858691.gihub.io/2022/10/24/tricore-CSA%E9%9A%8F%E7%AC%94/" class="nav__link">
+                    <div>
+                        <div class="nav__label">
+                            Next Post
+                        </div>
+                        <div class="nav__title">
+                            tricore CSA随笔
+                        </div>
+                    </div>
+                    <div>
+                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M434.944 790.624l-45.248-45.248L623.04 512l-233.376-233.376 45.248-45.248L713.568 512z" fill="#808080"></path></svg>
+                    </div>
+                </a>
+            
+        </div>
+    </div>
 
-    
-        <main class="main tagscloud">
-            <a href="/czc13611858691.gihub.io/tags/8%E4%BD%8DMCU/" style="font-size: 16px; color: #acb3c2">8位MCU</a> <a href="/czc13611858691.gihub.io/tags/AVR/" style="font-size: 16px; color: #acb3c2">AVR</a> <a href="/czc13611858691.gihub.io/tags/LIN/" style="font-size: 25.5px; color: #798090">LIN</a> <a href="/czc13611858691.gihub.io/tags/UDS/" style="font-size: 16px; color: #acb3c2">UDS</a> <a href="/czc13611858691.gihub.io/tags/can/" style="font-size: 16px; color: #acb3c2">can</a> <a href="/czc13611858691.gihub.io/tags/cmake/" style="font-size: 16px; color: #acb3c2">cmake</a> <a href="/czc13611858691.gihub.io/tags/crc8/" style="font-size: 16px; color: #acb3c2">crc8</a> <a href="/czc13611858691.gihub.io/tags/csa/" style="font-size: 16px; color: #acb3c2">csa</a> <a href="/czc13611858691.gihub.io/tags/esp32/" style="font-size: 16px; color: #acb3c2">esp32</a> <a href="/czc13611858691.gihub.io/tags/fpv/" style="font-size: 16px; color: #acb3c2">fpv</a> <a href="/czc13611858691.gihub.io/tags/freertos/" style="font-size: 16px; color: #acb3c2">freertos</a> <a href="/czc13611858691.gihub.io/tags/git/" style="font-size: 35px; color: #454d5d">git</a> <a href="/czc13611858691.gihub.io/tags/nodemcu/" style="font-size: 16px; color: #acb3c2">nodemcu</a> <a href="/czc13611858691.gihub.io/tags/pcan/" style="font-size: 16px; color: #acb3c2">pcan</a> <a href="/czc13611858691.gihub.io/tags/python-can/" style="font-size: 16px; color: #acb3c2">python-can</a> <a href="/czc13611858691.gihub.io/tags/simplefoc/" style="font-size: 16px; color: #acb3c2">simplefoc</a> <a href="/czc13611858691.gihub.io/tags/tricore/" style="font-size: 16px; color: #acb3c2">tricore</a> <a href="/czc13611858691.gihub.io/tags/ubuntu/" style="font-size: 16px; color: #acb3c2">ubuntu</a> <a href="/czc13611858691.gihub.io/tags/%E5%8D%95%E7%89%87%E6%9C%BA/" style="font-size: 16px; color: #acb3c2">单片机</a> <a href="/czc13611858691.gihub.io/tags/%E6%B1%BD%E8%BD%A6%E7%94%B5%E5%AD%90/" style="font-size: 25.5px; color: #798090">汽车电子</a> <a href="/czc13611858691.gihub.io/tags/%E7%89%A9%E8%81%94%E7%BD%91/" style="font-size: 16px; color: #acb3c2">物联网</a> <a href="/czc13611858691.gihub.io/tags/%E7%96%91%E9%9A%BE%E9%97%AE%E9%A2%98/" style="font-size: 16px; color: #acb3c2">疑难问题</a> <a href="/czc13611858691.gihub.io/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/" style="font-size: 16px; color: #acb3c2">虚拟机</a> <a href="/czc13611858691.gihub.io/tags/%E8%AF%8A%E6%96%AD/" style="font-size: 16px; color: #acb3c2">诊断</a> <a href="/czc13611858691.gihub.io/tags/%E8%BD%AF%E4%BB%B6/" style="font-size: 16px; color: #acb3c2">软件</a>
-        </main>
-        <style>
-            .tagscloud a {
-                margin-right: 1em;
-                border-bottom: 1px solid #ACB3C2;
-                line-height: 65px;
-                white-space: nowrap;
-            }
-            .tagscloud a:hover {
-                border-bottom: 2px solid #454D5D;
-                text-decoration: none;
-            }
-        </style>
-    
 
+
+
+
+</main>
 
             <!-- <footer class="footer">
     
